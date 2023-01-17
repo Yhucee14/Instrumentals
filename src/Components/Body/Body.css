@@ -1,0 +1,22 @@
+.Bodycon{
+    padding: 20px;
+    padding-left: 130px;
+}
+
+.textcon{
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 130px;
+}
+
+.belowcon{
+    text-align: left;
+    padding-top: 25px;
+    padding-left: 130px;
+}
+
+.explorebtn{
+    border-radius: 22px;
+    background: black;
+    color: white;
+}
