@@ -40,7 +40,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="static">
       <Container maxWidth="xl"
         id='container'>
         <Toolbar disableGutters
