@@ -2,5 +2,6 @@
     /* background: #DFA3D7;
     background: -webkit-linear-gradient(left, #DFA3D7, #C6D366);
     background: -moz-linear-gradient(left, #DFA3D7, #C6D366); */
-    background: linear-gradient(to right, #e1acda, #dbd8bdfb, #fdf492e4);
+    /* background: linear-gradient(to right, #3E0660, #FFF052); */
+    background: url(../src/Components/Assets/bgcolor.png);
 }

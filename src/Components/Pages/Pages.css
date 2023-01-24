@@ -1,0 +1,25 @@
+
+.NewContainer{
+    padding: 10px;
+}
+
+.cardbox{
+    padding: 10px;
+}
+
+.playbtn{
+   position: absolute;
+   top: -131%;
+   left: 37%;
+   z-index: 7000;
+}
+
+.wavecon{
+    position: absolute;
+}
+
+#waveform{
+    position: absolute;
+    margin-top: -47%;
+    margin-left: -2%;
+}

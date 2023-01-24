@@ -1,11 +1,33 @@
 #Navbtn{
-    padding-left: 40px;
+    margin-left: 30px;
+    color: #777777;
 }
 
 #left-Navbtn{
     padding-right: 25px;
+    color: #777777;
 }
 
 /* #logoimg{
     background: transparent;
 } */
+
+.dropdown-content{
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        margin-top: 10px;
+        background: #dbd8bdfb;
+        min-width: 100px;
+        text-align: center;
+       
+        
+}
+
+.dropdown-content a{
+    display: block;
+    color: #777777;
+    padding: 4px 4px;
+    text-decoration: none;
+}
+.dropdown:hover .dropdown-content {display: block;}

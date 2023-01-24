@@ -40,7 +40,11 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static"
+    sx={{
+      background: "transparent",
+    }}
+    >
       <Container maxWidth="xl"
         id='container'>
         <Toolbar disableGutters
@@ -126,7 +130,7 @@ const Header = () => {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'end', }}>
 
             <Button id='Navbtn'
-              sx={{ my: 2, color: 'white', display: 'block' }}
+              sx={{  color: 'white', display: 'block', textAlign: 'center' }}
               component="a"
               href="https://www.google.com/maps/@9.0338725,8.677457,6zcv"
             >
@@ -134,23 +138,31 @@ const Header = () => {
             </Button>
 
             <Button id='Navbtn'
-              sx={{ my: 2, color: 'white', display: 'block' }}
+              sx={{  color: 'white', display: 'block' }}
               component="a"
               href="https://www.google.com/maps/@9.0338725,8.677457,6zcv"
             >
               <a>Newly-Added</a>
             </Button>
 
-            <Button id='Navbtn'
-              sx={{ my: 2, color: 'white', display: 'block' }}
+            <Button id='Navbtn' className='dropdown'
+              sx={{  color: 'white', display: 'inline-block' }}
               component="a"
               href="https://www.google.com/maps/@9.0338725,8.677457,6zcv"
             >
               <a>Genres</a>
+              <div className='dropdown-content'>
+                <a href='#'>Afrobeats</a>
+                <a href='#'>Drill</a>
+                <a href='#'>EDM</a>
+                <a href='#'>Hiphop</a>
+                <a href='#'>Soundkits</a>
+
+              </div>
             </Button>
 
             <Button id='Navbtn'
-              sx={{ my: 2, color: 'white', display: 'block' }}
+              sx={{  color: 'white', display: 'block' }}
               component="a"
               href="https://www.google.com/maps/@9.0338725,8.677457,6zcv"
             >
@@ -169,8 +181,8 @@ const Header = () => {
               <a>Login</a>
             </Button>
 
-            <Button id='left-Navbtn'
-              sx={{ my: 2, color: 'white', display: 'block' }}
+            <Button id='right-Navbtn'
+              sx={{ my: 2,  display: 'block', bgcolor: 'black', borderRadius: '15px', color: 'white', }}
               component="a"
               href="https://www.google.com/maps/@9.0338725,8.677457,6zcv"
             >

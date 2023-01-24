@@ -1,22 +1,56 @@
-.Bodycon{
-    padding: 20px;
-    padding-left: 130px;
-}
+/* .Bodycon{
+    padding-top: 20px;
+    padding-left: 100px;
+  
+} */
 
 .textcon{
     text-align: left;
     padding-top: 50px;
-    padding-left: 130px;
+    padding-left: 100px;
+    
 }
 
 .belowcon{
     text-align: left;
     padding-top: 25px;
-    padding-left: 130px;
+    padding-left: 120px;
+    padding-bottom: 20px;
 }
 
 .explorebtn{
     border-radius: 22px;
-    background: black;
-    color: white;
+    /* background: black;
+    color: white; */
+}
+
+/* .boxone{
+    width: 170px;
+    height: 400px;
+    padding: 10px;
+} */
+
+.onebox{
+    /* background-image: url("../Assets/studio.jpg");  */
+    /* width: 170px;
+    height: 270px; */
+    padding: 5px;
+    transform: skew(-12deg);
+    margin-top: -65px;
+}
+.twobox{
+    padding: 2px;
+    transform: skew(-12deg);
+    margin-left: -12px;
+}
+.threebox{
+    padding: 5px;
+    transform: skew(-12deg);
+    margin-top: -65px;
+    margin-left: 13px;
+}
+.fourbox{
+    padding: 5px;
+    transform: skew(-12deg);
+    margin-left: -13px;
 }
