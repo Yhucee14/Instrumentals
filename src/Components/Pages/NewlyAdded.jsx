@@ -2,14 +2,22 @@ import React, { Component } from 'react'
 import './Pages.css'
 import { Box, Card, CardContent, Typography, CardMedia, Button} from "@mui/material";
 import Grid from '@mui/material/Grid';
-// import Audio from '../Components/Pages/Audio'
 import styled from "styled-components";
 import WaveSurfer from 'wavesurfer.js';
-import loader from '../Assets/loader.png';
+// import loader from '../Assets/loader.png';
+// import studio from '../Assets/studio.jpg';
+import last from '../Assets/last.jpg';
+import burna from './burna.mp3'
+
+// const coverPic = [
+//   last,
+//   loader,
+//   studio,
+// ]
 
 const data = [
   {
-    songImg: "../Assets/loader.png",
+    songImg: last,
     songName: "Last Last",
     songGenre: "Afrobeat",
     songDetails: "125 BPM,  3:45mins",
@@ -74,44 +82,38 @@ class NewlyAdded extends Component {
     this.waveform.load(track);
   };
 
+
   handlePlay = () => {
     this.setState({ playing: !this.state.playing });
     this.waveform.playPause();
   };
 
+ 
+
 
     render() {
 
-      const url = 'https://www.mfiles.co.uk/mp3-downloads/gs-cd-track2.mp3';
+  // const url = 'https://www.mfiles.co.uk/mp3-downloads/brahms-symphony3-3-theme-piano-solo.mp3';
 
     
       return (
         <div className='NewContainer'>
-            <Box  sx={{ color: 'black', display: 'flex',justifyContent: 'space-between', }}>
-                <Typography variant='h4'>Newly Added</Typography>
-                <Button
-                  sx={{ color: 'black', display: 'block' }}
-                  component="a"
-                  href="https://www.google.com/maps/@9.0338725,8.677457,6zcv"
-                >
-                  See more...
-                </Button>
-            </Box>
 
 
             {data.map((value,index) => {
+
               return(
-                <Grid container>
+                <Grid container >
     
-                <Grid item md={4}>
-                  <Box className='cardbox'>
-                  <Card sx={{display: 'block', }}>
+                <Grid item md={4} >
+                  <div className='cardbox'>
+                  <Card sx={{display: 'block', }}> 
                      
                     <Box sx={{padding: '10px', position: 'relative', }} key={index}>
-                    <CardMedia className='cardmed'
+                    <CardMedia square 
                     component='img'
                     height='200'
-                    src= {loader}
+                    src= {value.songImg}   
                     alt='splash'/>
         
               <WaveformContainer className='wavecon'> 
@@ -121,7 +123,7 @@ class NewlyAdded extends Component {
         
               </PlayButton>
               <Wave id="waveform"/> 
-              <audio id="track" src={url}/>
+              <audio id="track" src={burna}/>
         
               </WaveformContainer>
                     </Box>
@@ -150,13 +152,16 @@ class NewlyAdded extends Component {
                     >
                       <Typography sx={{ paddingLeft: '5px',  paddingRight: '5px',  paddingTop: '3px', paddingBottom: '3px' , }}>Add To Cart</Typography>
         
-                      <Box sx={{ bgcolor: 'white', color: 'black', borderRadius: '30px', paddingLeft: '5px',  paddingRight: '5px',  paddingTop: '4px', paddingBottom: '3px'  }}>
+                      <Box sx={{ bgcolor: 'white', color: 'black', borderRadius: '30px', paddingLeft: '5px',  paddingRight: '5px',  paddingTop: '4px',  paddingBottom: '3px'  }}>  
                         <Typography>{value.songPrice}</Typography></Box>
                     </Button>
                     </CardContent>
                   </Card>
-                  </Box>
+                  </div>
                 </Grid>
+
+               
+        
     
                 </Grid>
 

@@ -1,10 +1,12 @@
 
 .NewContainer{
     padding: 10px;
+   
 }
 
 .cardbox{
     padding: 10px;
+    width: 290px;
 }
 
 .playbtn{
@@ -19,6 +21,26 @@
 }
 
 #waveform{
+    position: absolute;
+    margin-top: -47%;
+    margin-left: -2%;
+}
+
+.covercon{
+    display: flex;
+}
+
+#wavetwo{
+    position: absolute;
+    margin-top: -47%;
+    margin-left: -2%;
+}
+
+.wavewrap{
+    display: flex;
+}
+
+#wavethree{
     position: absolute;
     margin-top: -47%;
     margin-left: -2%;
