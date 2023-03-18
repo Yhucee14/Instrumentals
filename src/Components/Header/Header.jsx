@@ -12,8 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import logo from '../Assets/richlogo.png';
-// import AdbIcon from '@mui/icons-material/Adb';
-// import {AiOutlineMenu} from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 const pages = ['Home', 'Newly-Added', 'Genres', 'Contact Us'];
 
@@ -181,13 +180,13 @@ const Header = () => {
               <a>Login</a>
             </Button>
 
+            <Link to="/Cart" >
             <Button id='right-Navbtn'
               sx={{ my: 2,  display: 'block', bgcolor: 'black', borderRadius: '15px', color: 'white', }}
               component="a"
-              href="https://www.google.com/maps/@9.0338725,8.677457,6zcv"
             >
-              <a>Signup</a>
-            </Button>
+              <a>Cart</a>
+            </Button></Link>
           </Box>
 
 

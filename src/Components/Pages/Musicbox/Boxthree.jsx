@@ -8,10 +8,18 @@ import WaveSurfer from 'wavesurfer.js';
 import ye from '../ye.mp3';
 import yepic from '../Musicbox/yepic.jpg'
 
-// const coverPic = [
-//   last,
-//   loader,
-//   studio,
+
+// const cartItems = [
+//   {
+//     name: 'Nike',
+//     price: '$100',
+//     image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+//   },
+//   {
+//     name: 'Adidas',
+//     price: '$200',
+//     image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+//   },
 // ]
 
 const data = [
@@ -19,8 +27,8 @@ const data = [
     songImg: ye,
     songName: "Burna Boy - Ye",
     songGenre: "Afrobeat",
-    songDetails: "125 BPM,  3:45mins",
-    songPrice: "N4300",
+    songDetails: "125 BPM,  3:45mins", 
+    songPrice: "N4300", 
   },
 ]
 
@@ -57,6 +65,8 @@ const PlayButton = styled.button`
 
 class Boxthree extends Component {
 
+  
+
   state = {
     playing: false,
   };
@@ -87,13 +97,43 @@ class Boxthree extends Component {
     this.wavethree.playPause();
   };
 
- 
+  constructor(props){
+    super(props);
+    this.state = {
+      cartItems: []
+    };
+  }
 
+  
+
+//   handleAddProduct = (value) => {
+// const valueExist = this.state.cartItems.find((item) => item.id === value.id);
+
+//     if(valueExist){
+//       this.state.setCartItems(this.state.cartItems.map((item) => item.id === value.id ? 
+//       {...valueExist, quantity: valueExist.quantity + 1}: item)
+//       );
+//     }
+//       else{
+//         this.state.setCartItems([...this.state.cartItems, {...value, quantity: 1}]);
+//       }
+
+  
+   
+//   }
+
+  // setCartItems = (cartItems) => {
+  //   this.setState({
+  //     cartItems: []
+  //   });
+  // }
+
+
+ 
 
     render() {
 
-      // const urltwo = 'https://www.mfiles.co.uk/mp3-downloads/pachelbels-canon-arranged.mp3';
-
+      // const [cartItems, setCartItems] = useState([]);
     
       return (
         <div className='NewContainer'>
@@ -143,12 +183,12 @@ class Boxthree extends Component {
                         <Typography>
                           Lease
                         </Typography></Box>
+
                         <Button variant='contained'
-                      sx={{ bgcolor: '#3E0660', color: 'white', display: 'flex', borderRadius: '30px', }}
-                      component="a"
-                      href="https://www.google.com/maps/@9.0338725,8.677457,6zcv"
+                      sx={{ bgcolor: '#3E0660', color: 'white', display: 'flex', borderRadius: '30px', }} 
+                      onClick={() => this.handleAddProduct(value)}
                     >
-                      <Typography sx={{ paddingLeft: '5px',  paddingRight: '5px',  paddingTop: '3px', paddingBottom: '3px' , }}>Add To Cart</Typography>
+                      <Typography sx={{ paddingLeft: '5px',  paddingRight: '5px',  paddingTop: '3px', paddingBottom: '3px' , }}>Add To Carst</Typography>
         
                       <Box sx={{ bgcolor: 'white', color: 'black', borderRadius: '30px', paddingLeft: '5px',  paddingRight: '5px',  paddingTop: '4px', paddingBottom: '3px'  }}>
                         <Typography>{value.songPrice}</Typography></Box>
