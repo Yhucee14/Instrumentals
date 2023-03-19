@@ -39,22 +39,23 @@ if (productExist.quantity === 1){
   );
 }
       }
+
+  const handleCartClearance = () => {
+    setCartItems([]);
+  }
     
     
     return (
     <div>
       <Router>
-        <Header />
+        <Header cartItems={cartItems}/>
         <Body />
         <Path productItems={productItems} cartItems={cartItems} handleAddProduct={handleAddProduct}
-         />
-      </Router>
-        
+        handleRemoveProduct={handleRemoveProduct}
+        handleCartClearance = {handleCartClearance} />
+        </Router>
+        </div>
+        );
+    };
 
-
-
-    </div>
-  )
-}
-
-export default Home
+    export default Home;

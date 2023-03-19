@@ -19,7 +19,7 @@ const pages = ['Home', 'Newly-Added', 'Genres', 'Contact Us'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 
-const Header = () => {
+const Header = ({cartItems}) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -182,11 +182,13 @@ const Header = () => {
 
             <Link to="/Cart" >
             <Button id='right-Navbtn'
-              sx={{ my: 2,  display: 'block', bgcolor: 'black', borderRadius: '15px', color: 'white', }}
-              component="a"
+              sx={{ my: 2,  display: 'block', bgcolor: 'white', borderRadius: '15px', color: 'black', }}
+              
             >
-              <a>Cart</a>
-            </Button></Link>
+              <a>Cart</a> <span>{cartItems.length === 0 ? "0" : cartItems.length}</span>
+            </Button> 
+           
+            </Link>
           </Box>
 
 
