@@ -4,10 +4,12 @@ import { Box, Typography, Button, Card, CardMedia, } from "@mui/material";
 import './Body.css';
 import studio from '../Assets/studio.jpg';
 
+
+
 const Body = () => {
   return (
     <div >
-        <Grid container className='bodycon'>
+        <Grid container className='bodycon'> 
             <Grid item md={12} className='textcon'
             sx={{ width: "100%",}}>
               
@@ -84,8 +86,9 @@ const Body = () => {
                 
             </Grid>
         </Grid>
+       
     </div>
   )
 }
 
-export default Body
+export default Body;

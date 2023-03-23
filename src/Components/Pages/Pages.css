@@ -11,16 +11,32 @@
 
 .playbtn{
    position: absolute;
-   top: -131%;
-   left: 37%;
+   left: 42%;
+   margin-top: -75%;
    z-index: 7000;
 }
 
-.wavecon{
+#graph{
     position: absolute;
+    margin-top: -20%;
+    margin-left: -2%;
 }
 
-#waveform{
+.itemcon{
+    display: flex
+    }
+
+/* .wavecon{
+    position: absolute;
+    margin-top: -47%;
+} */
+
+.mapcon{
+    display: block;
+    }
+
+
+/* #waveform{
     position: absolute;
     margin-top: -47%;
     margin-left: -2%;
@@ -30,9 +46,9 @@
     display: flex;
 }
 
-#wavetwo{
+.waveform{
     position: absolute;
-    margin-top: -47%;
+    margin-top: -7%;
     margin-left: -2%;
 }
 
@@ -48,4 +64,4 @@
 
 .mapcon{
     display: flex
-    }
+    } */

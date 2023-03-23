@@ -2,6 +2,7 @@ import React from "react";
 import Products from "../Products/Products"
 import {Route, Routes} from "react-router-dom"
 import Cart from "../Pages/Cart"
+import Body from '../Body/Body';
 
 const Path = ({productItems, cartItems, handleAddProduct, handleRemoveProduct, handleCartClearance}) => {
 
@@ -9,10 +10,13 @@ const Path = ({productItems, cartItems, handleAddProduct, handleRemoveProduct, h
     return (
       <div>
        <Routes>
+        {/* <Route path="/" exact element={<Body productItems={productItems} handleAddProduct={handleAddProduct} />}/>  */}
+
         <Route path="/" exact element={<Products productItems={productItems} handleAddProduct={handleAddProduct} />}/> 
 
         <Route path="/cart" exact element={<Cart cartItems={cartItems} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} handleCartClearance={handleCartClearance} />} /> 
           
+        
             
        </Routes>
       </div>

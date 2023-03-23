@@ -79,7 +79,6 @@ class Boxthree extends Component {
       cursorWidth: 1,
       container: '#wavethree',
       backend: 'WebAudio',
-      height: 40,
       progressColor: 'blue',
       responsive: true,
       waveColor: '#EFEFEF',

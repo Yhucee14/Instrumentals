@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import logo from '../Assets/richlogo.png';
 import { Link } from 'react-router-dom';
+import Body from '../Body/Body';
 
 const pages = ['Home', 'Newly-Added', 'Genres', 'Contact Us'];
 
@@ -39,7 +40,8 @@ const Header = ({cartItems}) => {
   };
 
   return (
-    <AppBar position="static"
+    <div>
+       <AppBar position="static"
     sx={{
       background: "transparent",
     }}
@@ -195,6 +197,10 @@ const Header = ({cartItems}) => {
         </Toolbar>
       </Container>
     </AppBar>
+
+        
+    </div>
+   
   )
 }
 

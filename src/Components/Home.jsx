@@ -48,11 +48,13 @@ if (productExist.quantity === 1){
     return (
     <div>
       <Router>
-        <Header cartItems={cartItems}/>
-        <Body />
+        <Header cartItems={cartItems} />
+      
         <Path productItems={productItems} cartItems={cartItems} handleAddProduct={handleAddProduct}
         handleRemoveProduct={handleRemoveProduct}
         handleCartClearance = {handleCartClearance} />
+
+
         </Router>
         </div>
         );

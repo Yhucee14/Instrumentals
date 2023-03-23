@@ -2,16 +2,24 @@ import React from "react";
 import { Box, Card, CardContent, Typography, CardMedia, Button} from "@mui/material";
 import Grid from '@mui/material/Grid';
 import '../Pages/Pages.css'
+import Waveform from "../Waveform/Waveform"
+import ye from '../Data/ye.mp3';
+import Body from '../Body/Body';
+
+
 
 const Products = ({productItems, handleAddProduct}) => {
 
 
     return (
       <div className='mapcon'>
-               {productItems.map((productItem) => {
+        <Body />
+
+        <div  className='itemcon'>
+        {productItems.map((productItem) => {
 
 return(
-  <Grid container >
+  <Grid container>
 
   <Grid item md={4} >
     <div className='cardbox'>
@@ -24,16 +32,9 @@ return(
       src= {productItem.image}   
       alt='splash'/>
 
-{/* <WaveformContainer className='wavecon'> 
-<PlayButton className='playbtn' onClick={this.handlePlay}> 
+      
+<Waveform  className='wavecon' audio={productItem.audio}/>
 
-{!this.state.playing ? 'Play' : 'Pause'}
-
-</PlayButton>
-<Wave id="wavethree"/> 
-<audio id="trackthree" src={ye}/>
-
-</WaveformContainer> */}
       </Box>
     
       <CardContent>
@@ -48,10 +49,10 @@ return(
           </Typography> 
           <Box  sx={{ display: 'flex',justifyContent: 'space-between', }}>
           <Typography>
-            Exclusive
+            {productItem.type}
           </Typography>
           <Typography>
-            Lease
+            Leaseee
           </Typography></Box>
 
           <Button variant='contained'
@@ -72,6 +73,8 @@ return(
 )
 
 })}
+        </div>
+ 
        
       </div>
        
