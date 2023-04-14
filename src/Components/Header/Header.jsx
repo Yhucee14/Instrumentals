@@ -102,7 +102,7 @@ const Header = ({cartItems}) => {
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center"
                     component="a"
-                    href="https://www.google.com/maps/@9.0338725,8.677457,6zcv">
+                    href="../">
                     {page}
                   </Typography>
                 </MenuItem>
@@ -138,13 +138,13 @@ const Header = ({cartItems}) => {
               <a>Home</a>
             </Button>
 
-            <Button id='Navbtn'
-              sx={{  color: 'white', display: 'block' }}
-              component="a"
-              href="https://www.google.com/maps/@9.0338725,8.677457,6zcv"
+            <Link to="/NewlyAdded" >
+            <Button id='New'
+              sx={{  color: 'white',  }}
             >
-              <a>Newly-Added</a>
+              Newly-Added 
             </Button>
+            </Link>
 
             <Button id='Navbtn' className='dropdown'
               sx={{  color: 'white', display: 'inline-block' }}
@@ -187,7 +187,7 @@ const Header = ({cartItems}) => {
               sx={{ my: 2,  display: 'block', bgcolor: 'white', borderRadius: '15px', color: 'black', }}
               
             >
-              <a>Cart</a> <span>{cartItems.length === 0 ? "0" : cartItems.length}</span>
+              <a>Cart</a> <span>{cartItems.length === 0 ? "" : cartItems.length}</span>
             </Button> 
            
             </Link>

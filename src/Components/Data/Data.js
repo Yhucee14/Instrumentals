@@ -13,6 +13,7 @@ const data = {
             details: "125 BPM,  3:45mins", 
             audio: las,
             type: "Exclusive",
+            about: "The African Giant comes through again with this hit from his record breaking new album set to be released soon.",
         },
         {
             id: "2",
@@ -23,6 +24,7 @@ const data = {
             details: "125 BPM,  3:45mins",
             audio: party,
             type: "Exclusive",
+            about: "The African Giant comes through again with this hit from his record breaking new album set to be released soon.",
         },
         {
             id: "3",
@@ -33,6 +35,7 @@ const data = {
             details: "125 BPM,  3:45mins",
             audio: ye,
             type: "Exclusive",
+            about: "The African Giant comes through again with this hit from his record breaking new album set to be released soon.",
         },
     ]
 }

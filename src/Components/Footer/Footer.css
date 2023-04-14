@@ -1,0 +1,21 @@
+.footercon{
+    background: url(../Assets/footerbg.png); 
+    color: white;
+}
+
+#socialicons{
+    padding-left: 15px;
+    margin-top: 3px;
+}
+#socialone{
+    margin-top: 3px;
+}
+#boxborder{
+    border-right: 2px solid white;
+    text-align: center;
+}
+#locationicon{
+    margin-top: 3px;
+    color: white;
+    padding-right: 3px;
+}

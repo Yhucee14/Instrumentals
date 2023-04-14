@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './Components/Home';
 import Header from './Components/Header/Header';
-import Body from './Components/Body/Body';
+import Footer from './Components/Footer/Footer';
 import Wavecover from './Components/Pages/Wavecover';
 import data from "./Components/Data/Data"
 import { BrowserRouter as Router } from "react-router-dom"
@@ -50,13 +50,13 @@ const App = () => {
   return (
     <div id='container'> 
       <Router>
-        {/* <Home /> */}
+       
         <Header cartItems={cartItems} />
         <Path productItems={productItems} cartItems={cartItems} handleAddProduct={handleAddProduct}
           handleRemoveProduct={handleRemoveProduct}
           handleCartClearance={handleCartClearance} />
           
-        {/* <Products productItems={productItems} handleAddProduct={handleAddProduct}/> */}
+       <Footer />
       </Router>
     </div>
 

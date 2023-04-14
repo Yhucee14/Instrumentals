@@ -1,0 +1,33 @@
+.cart-items-list{
+    display: flex;
+    padding: 5px;
+}
+
+.total {
+    width: 25%;
+    margin-left: 36%;
+    background-color: black;
+    color: rgb(248, 245, 245);
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.cart-items{
+    height: 100%;
+    padding: 10px;
+    
+}
+
+.clearbtn{
+    margin-left: 19%;
+
+}
+
+.cart-items-header{
+    text-align: center;
+}
+
+.Noitems{
+    margin-left: 39%;
+}
